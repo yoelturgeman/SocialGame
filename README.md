@@ -10,7 +10,7 @@ narration are optional (buttons in the top-right corner).
 
 ## Run
 
-    npm install      (first time only)
+    (no install needed: Three.js is bundled in vendor/)
     npm start        then open http://localhost:5173
 
 ## Play
