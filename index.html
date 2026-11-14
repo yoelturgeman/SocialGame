@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="he">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>כיכר החברים</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": { "three": "./node_modules/three/build/three.module.js", "three/addons/": "./node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="game"></div>
+
+<!-- top: station progress + current goal (pictograms, optional Hebrew caption) -->
+<div id="stations"></div>
+<div id="goal">
+  <div id="goal-icons"></div>
+  <div id="caption" dir="rtl"></div>
+  <div id="dots"></div>
+</div>
+
+<div id="toggles">
+  <button id="t-sound" title="צלילים">🔊</button>
+  <button id="t-speech" title="הקראה">🗣️</button>
+  <button id="t-caption" title="כתוביות">💬</button>
+  <button id="t-watch" title="הדגמה לפני כל תחנה">👀</button>
+  <button id="t-parents" title="להורים ולמטפלים">👪</button>
+</div>
+
+<div id="watch-frame"></div>
+<div id="watch"><span>👀</span><button id="skip" title="דילוג על ההדגמה">⏭</button></div>
+<button id="rewatch" title="לצפות שוב בהדגמה">👀▶</button>
+<div id="phone"></div>
+<div id="breath"><div id="breath-guide"></div><div id="breath-me"></div><div id="breath-icon"></div><div id="breath-dots"></div></div>
+<div id="flash"></div>
+<div id="starpop"></div>
+<div id="buttons"></div>
+<div id="joy"><div id="knob"></div></div>
+
+<div id="start">
+  <div class="card">
+    <h1 id="title" dir="rtl"></h1>
+    <div id="modes"><button data-mode="kids">🧒 6–10</button><button data-mode="teen">🧑 10–16</button></div>
+    <div id="avatars"></div>
+    <button id="play">▶</button>
+    <button id="reset" title="התחלה מחדש">↺</button>
+  </div>
+</div>
+
+<div id="final">
+  <div class="card">
+    <div class="big">🎉</div>
+    <div id="final-stars"></div>
+    <button id="final-close">▶</button>
+  </div>
+</div>
+
+<div id="parents">
+  <div class="card" dir="rtl">
+    <h2 id="parents-title"></h2>
+    <p id="parents-note"></p>
+    <ul id="parents-list"></ul>
+    <button id="parents-close">✔</button>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
